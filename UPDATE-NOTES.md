@@ -1,22 +1,48 @@
 # Oct 27 update notes (draft preview republish)
-## Palettes per site
-- **integrativemedicine-us**: navy `#0b2440` deep `#123a63` royal `#2b86d6` green `#3fae87` btn `#4aa33d` — source: live https://integrativemedicine.us/dry-needling/ embedded page CSS (style block) + Divi customizer footer #001249
-- **coralspringsacupuncture**: navy `#003300` deep `#0d772e` royal `#2ea3f2` green `#7cda24` btn `#008000` — source: live coralspringsacupuncture.com HTML/CSS (#7cda24, #008000, #0d772e, #2ea3f2, #7cc68d)
-- **bocaraton-acupuncture**: navy `#0e2620` deep `#1d5b48` royal `#1d5b48` green `#1d5b48` btn `#1d5b48` — source: boca-acupuncture-redesign/site/assets/style.css (live HTML had almost no theme colors; #1d5b48 only)
-- **acupuncturebocaratonfl**: navy `#1c2422` deep `#1f5f4a` royal `#0090ce` green `#1f5f4a` btn `#00bfe5` — source: live acupuncturebocaratonfl.com (#e6dccf, #a68b6a, #00bfe5, #0090ce, #f6f1ea) + redesign greens as accent
-- **acupuncturetamarac**: navy `#1f6581` deep `#27323a` royal `#2ea3f2` green `#29c4a9` btn `#2ea3f2` — source: live acupuncturetamarac.com et-cache/HTML (#2ea3f2, #29c4a9, #1f6581, #82c0c7)
-- **cr8health**: navy `#111111` deep `#1d6186` royal `#046bd2` green `#4cc5c8` btn `#1d6186` — source: live cr8health.com Elementor/Astra globals (#1d6186, #4cc5c8, #046bd2, #334155, #f0f5fa)
-- **coconutcreek**: navy `#083000` deep `#054907` royal `#7cda24` green `#7cda24` btn `#7cda24` — source: live acupuncturecoconutcreek.com et-cache (#7cda24, #083000, #054907, #27323a)
-- **parkland**: navy `#0c9300` deep `#02d002` royal `#2ea3f2` green `#7cda24` btn `#0c9300` — source: live acupunctureparkland.com et-cache (#0c9300, #7cda24, #02d002, #2ea3f2)
+
+## Preview
+- Public noindex: https://imedicineus.github.io/im-draft-previews/
+- Index: https://imedicineus.github.io/im-draft-previews/preview/
+- Homepage draft: https://imedicineus.github.io/im-draft-previews/im-homepage/index.html
+- Repo: imedicineus/im-draft-previews (robots noindex)
+
+## Constraints honored
+- Restyle/edit only; no new pages (still 56)
+- Cities line + Ready-to-talk CTA only at page bottom (one `.blk.cta` per page)
+- No cream/gold; no live WP/Hostinger writes
+- Overlap max 29.2% (<30%)
+
+## Palettes per site (exact; source noted)
+| Site | navy / deep / royal / green / btn | Source |
+|---|---|---|
+| integrativemedicine-us | `#0b2440` `#123a63` `#2b86d6` `#3fae87` `#4aa33d` (footer `#001249`) | live integrativemedicine.us/dry-needling/ CSS + Divi customizer |
+| coralspringsacupuncture | `#003300` `#0d772e` `#2ea3f2` `#7cda24` `#008000` | live coralspringsacupuncture.com |
+| bocaraton-acupuncture | `#0e2620` `#1d5b48` | redesign proof (live nearly empty) |
+| acupuncturebocaratonfl | `#1c2422` `#1f5f4a` `#0090ce` / btn `#00bfe5` | live + redesign accent |
+| acupuncturetamarac | `#1f6581` `#2ea3f2` `#29c4a9` | live et-cache |
+| cr8health | `#111111` `#1d6186` `#046bd2` `#4cc5c8` | live Elementor/Astra |
+| coconutcreek | `#083000` `#054907` `#7cda24` | live et-cache |
+| parkland | `#0c9300` `#02d002` `#2ea3f2` `#7cda24` | live et-cache |
+
+Implemented in `gen/palettes.py` → `css_vars(site)` injected after base CSS so site tokens win.
 
 ## Parkland letter / Coconut Creek five-things
-**Why:** Not forced by `gen/sites.py` (that file only sets `voice` I vs he, phone, cities, footer). The letter and five-things formats were writing choices in `src/parkland/*.md` and `src/coconutcreek/*.md` (and similar in Oct 26 cornerstones).
-**Change made:** Rewrote all 14 pages to dry-needling clinic structure (The Short Version / Where It Tends to Help / What to Expect / Safety / FAQ). Letter framing (Dear neighbor, Warmly) and Five Things numbering removed. Trigram overlap vs prior versions under 30% (max pair across sites now 29.2%).
+**Why:** Not from `gen/sites.py` (only voice I/he, phone, cities, footer_addr). Formats were intentional writing choices in `src/parkland/*.md` and `src/coconutcreek/*.md`.
+**Change:** All 14 rewritten to dry-needling clinic sections (Short Version / Where It Tends to Help / What to Expect / Safety / FAQ). Letter ("Dear…", "Warmly") and numbered Five Things removed. Backups in `/tmp/src-bak-letter-fivethings/`.
 
-### Before (sample H2s)
-- Parkland acupuncture: ## Where I See Parkland Patients, ## What Acupuncture Is, ## What the Research Tells Us, ## What Your First Visit Will Feel Like, ## What I Commonly Treat, ## How Many Visits You May Need
-- Coconut Creek acupuncture: ## 1. The Needles Are Tiny, ## 2. Research Supports It for Several Common Problems, ## 3. The First Visit Is Mostly Talking, ## 4. It Fits Into Busy Family Schedules, ## 5. It Works Alongside Your Family Doctor, ## What Brings Coconut Creek Families In
+### Before → After (acupuncture H2s)
+- Parkland before: Where I See Parkland Patients; What Acupuncture Is; Research; First Visit; What I Commonly Treat; How Many Visits
+- Parkland after: The Short Version; Where It Tends to Help; What to Expect; How Care Is Planned; How It Works With Your Doctors; Safety
+- CC before: 1. Needles Are Tiny … 5. Works Alongside Your Family Doctor; What Brings Coconut Creek Families In
+- CC after: The Short Version; Where It Tends to Help; What to Expect; How Care Fits Busy Schedules; Working With Your Family Doctor; Kids and Needle Shy Adults
 
-### After (sample H2s)
-- Parkland acupuncture: ## The Short Version, ## Where It Tends to Help, ## What to Expect, ## How Care Is Planned, ## How It Works With Your Doctors, ## Safety
-- Coconut Creek acupuncture: ## The Short Version, ## Where It Tends to Help, ## What to Expect, ## How Care Fits Busy Schedules, ## Working With Your Family Doctor, ## Kids and Needle Shy Adults
+## Phone
+- Drafts / Parkland / IM: **954.884.0099**
+- Coconut Creek: **(954) 828-2620**
+- Note: live IM dry-needling also shows (954) 775-3765 on some CTAs
+
+## Mobile 390px
+- IM drafts + homepage: no horizontal overflow after `.tablewrap`; no sliders/carousels on draft pages
+
+## Open questions (unchanged)
+Fonts (drafts Fraunces+Inter vs live Divi Open Sans); Gulou; Nine Celestial Cycle; flat slugs/500s; IM /acupuncture/ 301; stem-cell alt; no treating/wife photo; cr8 locations; CC area claims; Parkland no street address; "4 clinics"/telehealth/20 years.
