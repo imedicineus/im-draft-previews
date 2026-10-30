@@ -1,0 +1,27 @@
+/* draft helpers */
+/* Preview-only helpers: stand-ins for live embeds that were deliberately not copied (no third-party frames). */
+.draft-video-poster{display:block;position:absolute;inset:0;width:100%;height:100%;background:#000 center/contain no-repeat;text-decoration:none}
+.draft-video-poster span{position:absolute;left:50%;top:50%;width:68px;height:48px;margin:-24px 0 0 -34px;border-radius:12px;background:rgba(23,35,34,.8)}
+.draft-video-poster span:after{content:"";position:absolute;left:27px;top:14px;border-style:solid;border-width:10px 0 10px 16px;border-color:transparent transparent transparent #fff}
+.draft-video-poster:hover span{background:#1ab7ea}
+.elementor-widget-video .elementor-wrapper{position:relative}
+.draft-embed{display:inline-block;position:relative;overflow:hidden;max-width:100%;min-height:200px;background:#e9edee;color:#1d5a82;text-decoration:none;font-weight:500;text-align:center}
+.draft-embed span{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);white-space:nowrap;padding:10px 16px;border:1px solid #1d5a82;border-radius:6px;background:#fff}
+.draft-held{margin:12px 0;padding:12px 16px;border:2px dashed #b45309;background:#fff7ed;color:#7c2d12;font:14px/1.4 Helvetica,Arial,sans-serif;border-radius:6px;text-align:left}
+.draft-held b{font-weight:700}
+.draft-ph{display:flex;align-items:center;justify-content:center;width:100%;background:#e5e7eb;border:2px dashed #6b7280;box-sizing:border-box;color:#374151;font:14px/1.4 Helvetica,Arial,sans-serif;text-align:center;padding:16px}
+.draft-flag{display:inline-block;margin-left:6px;padding:2px 8px;background:#fff7ed;border:1px dashed #b45309;color:#7c2d12;font:12px/1.4 Helvetica,Arial,sans-serif}
+.elementor-widget-video .draft-ph{align-items:flex-start;padding-top:24px}
+@media(max-width:767px){.draft-held-slot{min-height:276px;box-sizing:border-box}}
+.large-thumb .elementor-wrapper{min-height:475px}
+/* popups (Elementor modal stand-in): hidden until a "Read Info" button opens them */
+body>.elementor-location-popup{display:none}
+.dialog-widget.elementor-popup-modal{position:fixed;inset:0;z-index:9999;display:flex;overflow:hidden}
+.elementor-popup-modal .dialog-widget-content{position:relative;background:#fff;max-width:96vw;max-height:96vh;display:flex;flex-direction:column;overflow:hidden;margin:auto}
+.elementor-popup-modal .dialog-message{max-width:100%;overflow:auto;box-sizing:border-box;max-height:calc(96vh - 8px)}
+.elementor-popup-modal .dialog-message .elementor-location-popup{display:block}
+.elementor-popup-modal .dialog-close-button{position:absolute;margin-top:15px;cursor:pointer;line-height:1;z-index:2;background:none;border:0;padding:0;display:flex}
+.elementor-popup-modal .dialog-close-button svg{width:1em;height:1em}
+.video-wrapper .draft-video-poster{background-size:cover}
+.draft-held-fit{margin:0;box-sizing:border-box;min-height:var(--hd)}
+@media(max-width:767px){.draft-held-fit{min-height:var(--hm)}.draft-held-slot.draft-held-fit{min-height:var(--hm)}}
