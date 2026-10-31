@@ -14,6 +14,8 @@
 .elementor-widget-video .draft-ph{align-items:flex-start;padding-top:24px}
 @media(max-width:767px){.draft-held-slot{min-height:276px;box-sizing:border-box}}
 .large-thumb .elementor-wrapper{min-height:475px}
+/* the 4:3 ratio from the Elementor CSS plus min-height stretched the wrapper to 633px (video off to the side on phones, too wide on desktop); use the widget width like live */
+.large-thumb .elementor-wrapper{aspect-ratio:auto;width:100%;min-width:0}
 /* popups (Elementor modal stand-in): hidden until a "Read Info" button opens them */
 body>.elementor-location-popup{display:none}
 .dialog-widget.elementor-popup-modal{position:fixed;inset:0;z-index:9999;display:flex;overflow:hidden}
@@ -25,3 +27,8 @@ body>.elementor-location-popup{display:none}
 .video-wrapper .draft-video-poster{background-size:cover}
 .draft-held-fit{margin:0;box-sizing:border-box;min-height:var(--hd)}
 @media(max-width:767px){.draft-held-fit{min-height:var(--hm)}.draft-held-slot.draft-held-fit{min-height:var(--hm)}}
+
+/* touch devices: the service link lists can be tapped (no hover), and a tapped card keeps its list open */
+@media (hover:none){#main .serve-list{pointer-events:auto}}
+#main .service-colum.draft-open .serve-list{opacity:1!important;top:50%;transform:translateY(-50%);pointer-events:auto!important}
+#main .service-colum.draft-open .service-thumb-colum .elementor-element img{opacity:.5}
