@@ -156,55 +156,59 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 /*# sourceURL=wp-block-library-inline-css */
 </style>
 
-<style id="cr8-seo-headings-css">h2.cr8-was-h1{font-size:30px;line-height:1em}h2.cr8-was-h1.et_pb_contact_main_title{font-size:26px;line-height:26px}body.home h2.cr8-was-h1.et_pb_contact_main_title{font-size:22px;line-height:22px}h1.cr8-archive-h1{font-size:30px;line-height:1.2em;margin:0 0 20px;padding-bottom:10px}</style><style id="cr8-footer-global-css" data-applied="map,num1">#main-footer .cr8-foot-map{display:block;clear:both;width:100%;margin:12px 0}#main-footer .cr8-foot-map iframe{display:block;width:100%;height:250px;border:0}#main-footer .cr8-foot-num1{display:block;clear:both;float:none;width:100%;margin-top:18px}#main-footer .cr8-foot-num1 h2,#main-footer .widget_block.cr8-foot-num1 h2{font-size:17px!important;line-height:1.4!important;display:block;clear:both;float:none;width:100%;margin:0!important;padding:0!important;color:#c9a45c!important}#main-footer .cr8-foot-num1 h2 em,#main-footer .cr8-foot-num1 h2 strong{color:#c9a45c!important}</style><style id="cr8-contact-draft-css">/* ==========================================================================
-   cr8-consult-btn : narrow, one-line "Request Free Consult" button
-   --------------------------------------------------------------------------
-   Usage: add class "cr8-consult-btn" to the <a class="et_pb_button ...">.
-   Selectors start with "html body #page-container" (every Divi page has it) and
-   the look values carry !important so they beat Divi's per-page button CSS and
-   the cs-theme hover rules. Gold pill kept: bg #c9a45c, text #0e2620, weight
-   700, radius 999px. inline-block + width:auto + margin:0 auto centres it in
-   the CTA module (which is text-align:center). Divi's hover arrow (::after) is
-   hidden and the hover padding is held constant, so the label never wraps or
-   shifts. Mobile (<=767px): 18px font, 14px 30px padding, min-width 240px (button ~252px wide, ONE line at 360/390/412), centred on its container with position:relative;left:50%;translateX(-50%) so it stays centred even where the container is narrower than the button. <=340px steps down. (5:2x PM ET: made bigger per Jay; mirrored in cr8-consult-btn-global.php.)
-   ========================================================================== */
-html body #page-container .et_pb_button.cr8-consult-btn,
-html body #page-container .et_pb_button.cr8-consult-btn:hover {
-  display: inline-block !important;
-  width: auto !important;
-  max-width: 100% !important;
-  box-sizing: border-box !important;
-  margin: 0 auto !important;
-  padding: 14px 34px !important;
-  min-width: 240px !important;
-  font-size: 20px !important;
-  font-weight: 700 !important;
-  line-height: 1.25 !important;
-  text-align: center !important;
-  white-space: nowrap !important;
-  color: #0e2620 !important;
-  background: #c9a45c !important;
-  border: 2px solid #c9a45c !important;
-  border-radius: 999px !important;
+<style id="cr8-seo-headings-css">h2.cr8-was-h1{font-size:30px;line-height:1em}h2.cr8-was-h1.et_pb_contact_main_title{font-size:26px;line-height:26px}body.home h2.cr8-was-h1.et_pb_contact_main_title{font-size:22px;line-height:22px}h1.cr8-archive-h1{font-size:30px;line-height:1.2em;margin:0 0 20px;padding-bottom:10px}</style><style id="cr8-footer-global-css" data-applied="map,num1">#main-footer .cr8-foot-map{display:block;clear:both;width:100%;margin:12px 0}#main-footer .cr8-foot-map iframe{display:block;width:100%;height:250px;border:0}#main-footer .cr8-foot-num1{display:block;clear:both;float:none;width:100%;margin-top:18px}#main-footer .cr8-foot-num1 h2,#main-footer .widget_block.cr8-foot-num1 h2{font-size:17px!important;line-height:1.4!important;display:block;clear:both;float:none;width:100%;margin:0!important;padding:0!important;color:#c9a45c!important}#main-footer .cr8-foot-num1 h2 em,#main-footer .cr8-foot-num1 h2 strong{color:#c9a45c!important}</style><style id="cr8-contact-draft-css">/* cr8 contact page 409: one-line "Request Free Consult" button (same values as cr8-consult-btn-global.php) */
+html body.page-id-409 #page-container a.et_pb_button.cr8-consult-btn,
+html body.page-id-409 #page-container a.et_pb_button.cr8-consult-btn:hover,
+html body.page-id-409 #page-container a.et_pb_button.cr8-consult-btn:focus {
+  display: inline-block !important; box-sizing: border-box !important; width: auto !important; min-width: 240px !important; max-width: 100% !important; float: none !important;
+  margin: 0 auto !important; padding: 14px 34px !important; font-size: 20px !important; font-weight: 700 !important; line-height: 1.35 !important; letter-spacing: normal !important;
+  text-transform: none !important; text-align: center !important; text-decoration: none !important; white-space: nowrap !important; box-shadow: none !important;
+  color: #0e2620 !important; background: #c9a45c !important; background-image: none !important; border: 2px solid #c9a45c !important; border-radius: 999px !important;
 }
-html body #page-container .et_pb_button.cr8-consult-btn:hover { background: #b8934a !important; border-color: #b8934a !important; }
-html body #page-container .et_pb_button.cr8-consult-btn:after,
-html body #page-container .et_pb_button.cr8-consult-btn:hover:after { display: none !important; content: none !important; }
+html body.page-id-409 #page-container a.et_pb_button.cr8-consult-btn:hover,
+html body.page-id-409 #page-container a.et_pb_button.cr8-consult-btn:focus { background: #d9b872 !important; border-color: #d9b872 !important; }
+html body.page-id-409 #page-container a.et_pb_button.cr8-consult-btn:after,
+html body.page-id-409 #page-container a.et_pb_button.cr8-consult-btn:hover:after { display: none !important; content: none !important; }
 @media (max-width: 767px) {
-  html body #page-container .et_pb_button.cr8-consult-btn,
-  html body #page-container .et_pb_button.cr8-consult-btn:hover {
+  html body.page-id-409 #page-container a.et_pb_button.cr8-consult-btn,
+  html body.page-id-409 #page-container a.et_pb_button.cr8-consult-btn:hover,
+  html body.page-id-409 #page-container a.et_pb_button.cr8-consult-btn:focus {
     display: table !important; position: relative !important; left: 50% !important; transform: translateX(-50%) !important;
-    margin: 0 !important; padding: 14px 30px !important; font-size: 18px !important; min-width: 240px !important;
+    margin-left: 0 !important; margin-right: 0 !important; padding: 14px 30px !important; font-size: 18px !important; min-width: 240px !important;
   }
 }
 @media (max-width: 340px) {
-  html body #page-container .et_pb_button.cr8-consult-btn,
-  html body #page-container .et_pb_button.cr8-consult-btn:hover { min-width: 0 !important; padding: 12px 18px !important; font-size: 16px !important; }
+  html body.page-id-409 #page-container a.et_pb_button.cr8-consult-btn,
+  html body.page-id-409 #page-container a.et_pb_button.cr8-consult-btn:hover { min-width: 0 !important; padding: 12px 18px !important; font-size: 16px !important; }
 }
+/* hero: "Ready to Heal? Call Now / number" centred horizontally and vertically. Space below the header = ORIGINAL live spacing (section padding-top 35px + header-content padding 10px = 45px; +20px on phones = 65px). Bottom space equal to the top. */
+html body.page-id-409 #page-container .et_pb_fullwidth_header_0.et_pb_fullwidth_header { padding-top: 35px !important; padding-bottom: 35px !important; }
+html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .et_pb_fullwidth_header_container,
+html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content-container { justify-content: center !important; text-align: center !important; }
+html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content,
+html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .et_pb_header_content_wrapper,
+html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content h1,
+html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content p { text-align: center !important; margin-left: auto !important; margin-right: auto !important; }
+html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content { padding-left: 10px !important; padding-right: 10px !important; }
+html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content h1 { padding-bottom: 10px !important; }
+html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content p { padding-bottom: 0 !important; margin-bottom: 0 !important; }
+/* mid-page logo row hidden; the global bar above the footer is the only logo row; lifted above the section shadow (no drop shadow) */
+html body.page-id-409 .cr8-c409-hide-logos { display: none !important; }
+body.page-id-409 #cr8-logo-bar { position: relative; z-index: 2; }
+/* readable text in the CTA blocks: no green on green */
+html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content span[style*="color"],
+html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content em,
+html body.page-id-409 #page-container .et_pb_fullwidth_header_1 .header-content span[style*="color"],
+html body.page-id-409 #page-container .et_pb_fullwidth_header_1 .header-content em,
+html body.page-id-409 #page-container .et_pb_fullwidth_header_3 .header-content span[style*="color"],
+html body.page-id-409 #page-container .et_pb_fullwidth_header_3 .header-content em { color: #f1ece0 !important; }
+/* less space between the cities list (clinic tabs) and what follows (was 73px on desktop) */
+html body.page-id-409 #page-container .et_pb_section_3 { padding-bottom: 15px !important; }
+html body.page-id-409 #page-container .et_pb_section_3 > .et_pb_row_2 { padding-bottom: 15px !important; }
 /* DRAFT ONLY. In live, the contact logo bar comes from the global plugin cr8-logo-bar-global.php.
    Same values as the About v2 proof (cr8-about-fix5.php, row_10): white bar, 19px above/below, flex-centred,
    desktop gap 56px, logo widths 94/120/128/214, mobile one row gap 8px weights 1.62/2.1/2.39/4.35, 3px right pad >=768px. */
-body .cr8-logobar{background:#fff!important;padding:19px 0!important;margin:0!important;position:relative!important;z-index:2!important}
+body .cr8-logobar{background:#fff!important;padding:19px 0!important;margin:0!important}
 body .cr8-logobar-row{display:flex!important;flex-flow:row nowrap!important;align-items:center!important;justify-content:center!important;gap:56px!important;width:100%!important;max-width:1080px!important;margin-left:auto!important;margin-right:auto!important;padding-top:0!important;padding-bottom:0!important}
 body .cr8-logobar-row:before,body .cr8-logobar-row:after{display:none!important;content:none!important}
 body .cr8-logobar-row .et_pb_column{width:auto!important;min-width:0!important;margin:0!important;float:none!important;flex:0 0 auto!important;text-align:center!important}
@@ -226,19 +230,6 @@ body .cr8-logobar-row .cr8-lb-col3{flex-grow:2.39!important}
 body .cr8-logobar-row .cr8-lb-col4{flex-grow:4.35!important}
 }
 @media (min-width:768px){body .cr8-logobar-row{padding-right:3px!important;box-sizing:border-box!important}}
-/* cr8 contact hero (page 409 only): "Ready to Heal? Call Now / number" centred horizontally and vertically in its blue header section.
-   Top spacing below the header is the ORIGINAL live spacing (section padding-top 35px + header-content padding 10px = 45px; +20px header-content margin on phones = 65px).
-   Bottom spacing is made equal to the top (section padding-bottom 35px instead of Divi's 50px, header-content padding 10px all round). Left/right header-content padding made equal (Divi has 10px only on the right, which pushed the text 5px left of centre).. */
-html body.page-id-409 #page-container .et_pb_fullwidth_header_0.et_pb_fullwidth_header { padding-top: 35px !important; padding-bottom: 35px !important; }
-html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .et_pb_fullwidth_header_container,
-html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content-container { justify-content: center !important; text-align: center !important; }
-html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content,
-html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .et_pb_header_content_wrapper,
-html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content h1,
-html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content p { text-align: center !important; margin-left: auto !important; margin-right: auto !important; }
-html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content { padding-left: 10px !important; padding-right: 10px !important; }
-html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content h1 { padding-bottom: 10px !important; }
-html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content p { padding-bottom: 0 !important; margin-bottom: 0 !important; }
 </style></head>
 <body class="wp-singular page-template-default page page-id-409 custom-background wp-theme-Divi et_color_scheme_green et_pb_button_helper_class et_fixed_nav et_show_nav et_secondary_nav_enabled et_secondary_nav_two_panels et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns3 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
 	<div id="page-container">
@@ -808,7 +799,7 @@ html body.page-id-409 #page-container .et_pb_fullwidth_header_0 .header-content 
 			</section>
 				
 				
-			</div><div class="et_pb_section cr8-logobar et_section_regular"><div class="et_pb_row cr8-logobar-row"><div class="et_pb_column et_pb_column_1_4 cr8-lb-col cr8-lb-col1 et_pb_css_mix_blend_mode_passthrough"><div class="et_pb_module et_pb_image cr8-lb-img"><span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/coral-springs-regional-chamber-member-logo.png" alt="Acupuncture Coral Springs Chamber of Commerce Member" title="Acupuncture Coral Springs Chamber of Commerce Member" /></span></div></div><div class="et_pb_column et_pb_column_1_4 cr8-lb-col cr8-lb-col2 et_pb_css_mix_blend_mode_passthrough"><div class="et_pb_module et_pb_image cr8-lb-img"><span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/parkland-chamber-of-commerce-member-logo.jpg" alt="Acupuncture Parkland Chamber of Commerce" title="Acupuncture Parkland Chamber of Commerce" /></span></div></div><div class="et_pb_column et_pb_column_1_4 cr8-lb-col cr8-lb-col3 et_pb_css_mix_blend_mode_passthrough"><div class="et_pb_module et_pb_image cr8-lb-img"><span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/coconut-creek-chamber-council-member-logo.png" alt="Acupuncture Coconut Creek Chamber Council Member" title="Acupuncture Coconut Creek Chamber Council Member" /></span></div></div><div class="et_pb_column et_pb_column_1_4 cr8-lb-col cr8-lb-col4 et_pb_css_mix_blend_mode_passthrough et-last-child"><div class="et_pb_module et_pb_image cr8-lb-img"><span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/florida-state-oriental-medicine-association-logo.png" alt="Acupuncture Florida State Oriental Medicine Association" title="Acupuncture Florida State Oriental Medicine Association" /></span></div></div></div></div>		</div>
+			</div><div id="cr8-logo-bar" class="et_pb_section cr8-logobar et_section_regular"><div class="et_pb_row cr8-logobar-row"><div class="et_pb_column et_pb_column_1_4 cr8-lb-col cr8-lb-col1 et_pb_css_mix_blend_mode_passthrough"><div class="et_pb_module et_pb_image cr8-lb-img"><span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/coral-springs-regional-chamber-member-logo.png" alt="Acupuncture Coral Springs Chamber of Commerce Member" title="Acupuncture Coral Springs Chamber of Commerce Member" /></span></div></div><div class="et_pb_column et_pb_column_1_4 cr8-lb-col cr8-lb-col2 et_pb_css_mix_blend_mode_passthrough"><div class="et_pb_module et_pb_image cr8-lb-img"><span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/parkland-chamber-of-commerce-member-logo.jpg" alt="Acupuncture Parkland Chamber of Commerce" title="Acupuncture Parkland Chamber of Commerce" /></span></div></div><div class="et_pb_column et_pb_column_1_4 cr8-lb-col cr8-lb-col3 et_pb_css_mix_blend_mode_passthrough"><div class="et_pb_module et_pb_image cr8-lb-img"><span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/coconut-creek-chamber-council-member-logo.png" alt="Acupuncture Coconut Creek Chamber Council Member" title="Acupuncture Coconut Creek Chamber Council Member" /></span></div></div><div class="et_pb_column et_pb_column_1_4 cr8-lb-col cr8-lb-col4 et_pb_css_mix_blend_mode_passthrough et-last-child"><div class="et_pb_module et_pb_image cr8-lb-img"><span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/florida-state-oriental-medicine-association-logo.png" alt="Acupuncture Florida State Oriental Medicine Association" title="Acupuncture Florida State Oriental Medicine Association" /></span></div></div></div></div>		</div>
 	</div>
 						</div>
 
@@ -1073,7 +1064,7 @@ document.querySelectorAll('#top-menu li.menu-item-has-children > a').forEach(fun
                 observer.observe(b, config);
             }
         }, false);</script><script>document.addEventListener("submit",function(e){e.preventDefault();alert("Preview only. Forms are disabled.");},true);</script>
-<div style="position:relative;z-index:99999;background:#111;color:#fff;font:13px/1.4 Arial,sans-serif;padding:6px 12px;text-align:center;opacity:.92">Contact page v2: Call Now label, number on its own line, one deleted line, one-line Request Free Consult button, logo bar above the footer. Draft proof only, not the live page. noindex.</div>
+<div style="position:relative;z-index:99999;background:#111;color:#fff;font:13px/1.4 Arial,sans-serif;padding:6px 12px;text-align:center;opacity:.92">Contact page v3: Call Now label, number on its own line, one-line Request Free Consult buttons, logo bar above the footer (no shadow), no insurance line, hero centered, tighter clinic tabs gap, readable bottom text. Draft proof only, not the live page. noindex.</div>
 </body>
 </html>
 
