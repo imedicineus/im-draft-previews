@@ -156,7 +156,79 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 /*# sourceURL=wp-block-library-inline-css */
 </style>
 
-<style id="cr8-seo-headings-css">h2.cr8-was-h1{font-size:30px;line-height:1em}h2.cr8-was-h1.et_pb_contact_main_title{font-size:26px;line-height:26px}body.home h2.cr8-was-h1.et_pb_contact_main_title{font-size:22px;line-height:22px}h1.cr8-archive-h1{font-size:30px;line-height:1.2em;margin:0 0 20px;padding-bottom:10px}</style><style id="cr8-footer-global-css" data-applied="map,num1">#main-footer .cr8-foot-map{display:block;clear:both;width:100%;margin:12px 0}#main-footer .cr8-foot-map iframe{display:block;width:100%;height:250px;border:0}#main-footer .cr8-foot-num1{display:block;clear:both;float:none;width:100%;margin-top:18px}#main-footer .cr8-foot-num1 h2,#main-footer .widget_block.cr8-foot-num1 h2{font-size:17px!important;line-height:1.4!important;display:block;clear:both;float:none;width:100%;margin:0!important;padding:0!important;color:#c9a45c!important}#main-footer .cr8-foot-num1 h2 em,#main-footer .cr8-foot-num1 h2 strong{color:#c9a45c!important}</style></head>
+<style id="cr8-seo-headings-css">h2.cr8-was-h1{font-size:30px;line-height:1em}h2.cr8-was-h1.et_pb_contact_main_title{font-size:26px;line-height:26px}body.home h2.cr8-was-h1.et_pb_contact_main_title{font-size:22px;line-height:22px}h1.cr8-archive-h1{font-size:30px;line-height:1.2em;margin:0 0 20px;padding-bottom:10px}</style><style id="cr8-footer-global-css" data-applied="map,num1">#main-footer .cr8-foot-map{display:block;clear:both;width:100%;margin:12px 0}#main-footer .cr8-foot-map iframe{display:block;width:100%;height:250px;border:0}#main-footer .cr8-foot-num1{display:block;clear:both;float:none;width:100%;margin-top:18px}#main-footer .cr8-foot-num1 h2,#main-footer .widget_block.cr8-foot-num1 h2{font-size:17px!important;line-height:1.4!important;display:block;clear:both;float:none;width:100%;margin:0!important;padding:0!important;color:#c9a45c!important}#main-footer .cr8-foot-num1 h2 em,#main-footer .cr8-foot-num1 h2 strong{color:#c9a45c!important}</style><style id="cr8-contact-draft-css">/* ==========================================================================
+   cr8-consult-btn : narrow, one-line "Request Free Consult" button
+   --------------------------------------------------------------------------
+   Usage: add class "cr8-consult-btn" to the <a class="et_pb_button ...">.
+   Selectors start with "html body #page-container" (every Divi page has it) and
+   the look values carry !important so they beat Divi's per-page button CSS and
+   the cs-theme hover rules. Gold pill kept: bg #c9a45c, text #0e2620, weight
+   700, radius 999px. inline-block + width:auto + margin:0 auto centres it in
+   the CTA module (which is text-align:center). Divi's hover arrow (::after) is
+   hidden and the hover padding is held constant, so the label never wraps or
+   shifts. Mobile (<=480px) uses a slightly smaller font and padding.
+   Verified one line at 360 and 390 on the contact page draft.
+   ========================================================================== */
+html body #page-container .et_pb_button.cr8-consult-btn,
+html body #page-container .et_pb_button.cr8-consult-btn:hover {
+  display: inline-block !important;
+  width: auto !important;
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+  margin: 0 auto !important;
+  padding: 12px 30px !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  line-height: 1.25 !important;
+  text-align: center !important;
+  white-space: nowrap !important;
+  color: #0e2620 !important;
+  background: #c9a45c !important;
+  border: 2px solid #c9a45c !important;
+  border-radius: 999px !important;
+}
+html body #page-container .et_pb_button.cr8-consult-btn:hover { background: #b8934a !important; border-color: #b8934a !important; }
+html body #page-container .et_pb_button.cr8-consult-btn:after,
+html body #page-container .et_pb_button.cr8-consult-btn:hover:after { display: none !important; content: none !important; }
+@media (max-width: 480px) {
+  html body #page-container .et_pb_button.cr8-consult-btn,
+  html body #page-container .et_pb_button.cr8-consult-btn:hover { padding: 11px 22px !important; font-size: 18px !important; }
+}
+/* 380px and narrower (360 phones): the contact CTA's text box is only ~210px wide (Divi header-content margins), so the pill steps down to fit it on ONE line. */
+@media (max-width: 380px) {
+  html body #page-container .et_pb_button.cr8-consult-btn,
+  html body #page-container .et_pb_button.cr8-consult-btn:hover { padding: 11px 16px !important; font-size: 17px !important; }
+}
+@media (max-width: 340px) {
+  html body #page-container .et_pb_button.cr8-consult-btn,
+  html body #page-container .et_pb_button.cr8-consult-btn:hover { padding: 10px 14px !important; font-size: 15px !important; }
+}
+/* DRAFT ONLY. In live, the contact logo bar comes from the global plugin cr8-logo-bar-global.php.
+   Same values as the About v2 proof (cr8-about-fix5.php, row_10): white bar, 19px above/below, flex-centred,
+   desktop gap 56px, logo widths 94/120/128/214, mobile one row gap 8px weights 1.62/2.1/2.39/4.35, 3px right pad >=768px. */
+body .cr8-logobar{background:#fff!important;padding:19px 0!important;margin:0!important}
+body .cr8-logobar-row{display:flex!important;flex-flow:row nowrap!important;align-items:center!important;justify-content:center!important;gap:56px!important;width:100%!important;max-width:1080px!important;margin-left:auto!important;margin-right:auto!important;padding-top:0!important;padding-bottom:0!important}
+body .cr8-logobar-row:before,body .cr8-logobar-row:after{display:none!important;content:none!important}
+body .cr8-logobar-row .et_pb_column{width:auto!important;min-width:0!important;margin:0!important;float:none!important;flex:0 0 auto!important;text-align:center!important}
+body .cr8-logobar-row .et_pb_module{margin:0 auto!important;width:auto!important;max-width:none!important;float:none!important}
+body .cr8-logobar-row .et_pb_image_wrap{display:block!important;margin:0 auto!important}
+body .cr8-logobar-row .et_pb_image_wrap img{display:block!important;height:auto!important;max-width:100%!important;border:0!important;box-shadow:none!important;background:none!important}
+body .cr8-logobar-row .cr8-lb-col1 img{width:94px!important}
+body .cr8-logobar-row .cr8-lb-col2 img{width:120px!important}
+body .cr8-logobar-row .cr8-lb-col3 img{width:128px!important}
+body .cr8-logobar-row .cr8-lb-col4 img{width:214px!important}
+@media (max-width:767px){
+body .cr8-logobar-row{gap:8px!important;width:92%!important;max-width:100%!important}
+body .cr8-logobar-row .et_pb_column{flex:1 1 0!important}
+body .cr8-logobar-row .et_pb_module{width:100%!important}
+body .cr8-logobar-row .et_pb_column .et_pb_image_wrap,body .cr8-logobar-row .et_pb_column .et_pb_image_wrap img{display:block!important;width:100%!important;max-width:100%!important;height:auto!important}
+body .cr8-logobar-row .cr8-lb-col1{flex-grow:1.62!important}
+body .cr8-logobar-row .cr8-lb-col2{flex-grow:2.1!important}
+body .cr8-logobar-row .cr8-lb-col3{flex-grow:2.39!important}
+body .cr8-logobar-row .cr8-lb-col4{flex-grow:4.35!important}
+}
+@media (min-width:768px){body .cr8-logobar-row{padding-right:3px!important;box-sizing:border-box!important}}
+</style></head>
 <body class="wp-singular page-template-default page page-id-409 custom-background wp-theme-Divi et_color_scheme_green et_pb_button_helper_class et_fixed_nav et_show_nav et_secondary_nav_enabled et_secondary_nav_two_panels et_primary_nav_dropdown_animation_fade et_secondary_nav_dropdown_animation_fade et_header_style_left et_pb_footer_columns3 et_cover_background et_pb_gutter et_pb_gutters3 et_pb_pagebuilder_layout et_no_sidebar et_divi_theme et-db">
 	<div id="page-container">
 
@@ -543,70 +615,6 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 			</div>
 				
 				
-			</div><div class="et_pb_section et_pb_section_4 et_section_regular" >
-				
-				
-				
-				
-				
-				
-				<div class="et_pb_row et_pb_row_3 et_pb_row_fullwidth et_animated">
-				<div class="et_pb_column et_pb_column_1_4 et_pb_column_4  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_image et_pb_image_0">
-				
-				
-				
-				
-				<span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/coral-springs-regional-chamber-member-logo.png" alt="Acupuncture Coral Springs Chamber Member" title="Acupuncture Coral Springs Chamber Member" /></span>
-			</div>
-			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_5  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_image et_pb_image_1">
-				
-				
-				
-				
-				<span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2021/10/parkland-chamber-of-commerce-member-logo.jpg" alt="Acupuncture Parkland Chamber of Commerce" title="Acupuncture Parkland Chamber of Commerce" /></span>
-			</div>
-			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_6  et_pb_css_mix_blend_mode_passthrough">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_image et_pb_image_2">
-				
-				
-				
-				
-				<span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/coconut-creek-chamber-council-member-logo.png" alt="Acupuncture Coconut Creek Chamber Council Member" title="Acupuncture Coconut Creek Chamber Council Member" /></span>
-			</div>
-			</div><div class="et_pb_column et_pb_column_1_4 et_pb_column_7  et_pb_css_mix_blend_mode_passthrough et-last-child">
-				
-				
-				
-				
-				<div class="et_pb_module et_pb_image et_pb_image_3">
-				
-				
-				
-				
-				<span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/florida-state-oriental-medicine-association-logo.png" alt="Acupuncture Florida State Oriental Medicine Association Member" title="Acupuncture Florida State Oriental Medicine Association Member" /></span>
-			</div>
-			</div>
-				
-				
-				
-				
-			</div>
-				
-				
 			</div><div class="et_pb_with_border et_pb_section et_pb_section_6 et_pb_fullwidth_section et_section_regular" >
 				
 				
@@ -760,7 +768,7 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 						<span class="et_pb_fullwidth_header_subhead">We are happy to answer all your questions.</span>
 						<div class="et_pb_header_content_wrapper"><h3> Call <a class="cr8-tel" href="tel:+19547753765">954-775-3765</a></h3>
 </div>
-						<a class="et_pb_button et_pb_more_button et_pb_button_one" href="https://coralspringsacupuncture.com/free-consultation/">Request Free Consult</a>
+						<a class="et_pb_button et_pb_more_button et_pb_button_one cr8-consult-btn" href="https://coralspringsacupuncture.com/free-consultation/">Request Free Consult</a>
 					</div>
 				</div>
 					
@@ -789,7 +797,7 @@ h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-backg
 			</section>
 				
 				
-			</div>		</div>
+			</div><div class="et_pb_section cr8-logobar et_section_regular"><div class="et_pb_row cr8-logobar-row"><div class="et_pb_column et_pb_column_1_4 cr8-lb-col cr8-lb-col1 et_pb_css_mix_blend_mode_passthrough"><div class="et_pb_module et_pb_image cr8-lb-img"><span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/coral-springs-regional-chamber-member-logo.png" alt="Acupuncture Coral Springs Chamber of Commerce Member" title="Acupuncture Coral Springs Chamber of Commerce Member" /></span></div></div><div class="et_pb_column et_pb_column_1_4 cr8-lb-col cr8-lb-col2 et_pb_css_mix_blend_mode_passthrough"><div class="et_pb_module et_pb_image cr8-lb-img"><span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/parkland-chamber-of-commerce-member-logo.jpg" alt="Acupuncture Parkland Chamber of Commerce" title="Acupuncture Parkland Chamber of Commerce" /></span></div></div><div class="et_pb_column et_pb_column_1_4 cr8-lb-col cr8-lb-col3 et_pb_css_mix_blend_mode_passthrough"><div class="et_pb_module et_pb_image cr8-lb-img"><span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/coconut-creek-chamber-council-member-logo.png" alt="Acupuncture Coconut Creek Chamber Council Member" title="Acupuncture Coconut Creek Chamber Council Member" /></span></div></div><div class="et_pb_column et_pb_column_1_4 cr8-lb-col cr8-lb-col4 et_pb_css_mix_blend_mode_passthrough et-last-child"><div class="et_pb_module et_pb_image cr8-lb-img"><span class="et_pb_image_wrap "><img decoding="async" src="https://coralspringsacupuncture.com/wp-content/uploads/2018/06/florida-state-oriental-medicine-association-logo.png" alt="Acupuncture Florida State Oriental Medicine Association" title="Acupuncture Florida State Oriental Medicine Association" /></span></div></div></div></div>		</div>
 	</div>
 						</div>
 
@@ -1054,7 +1062,7 @@ document.querySelectorAll('#top-menu li.menu-item-has-children > a').forEach(fun
                 observer.observe(b, config);
             }
         }, false);</script><script>document.addEventListener("submit",function(e){e.preventDefault();alert("Preview only. Forms are disabled.");},true);</script>
-<div style="position:relative;z-index:99999;background:#111;color:#fff;font:13px/1.4 Arial,sans-serif;padding:6px 12px;text-align:center;opacity:.92">Contact page v1: Call Now label, number on its own line, one deleted line. Draft proof only, not the live page. noindex.</div>
+<div style="position:relative;z-index:99999;background:#111;color:#fff;font:13px/1.4 Arial,sans-serif;padding:6px 12px;text-align:center;opacity:.92">Contact page v1: Call Now label, number on its own line, one deleted line, one-line Request Free Consult button, logo bar above the footer. Draft proof only, not the live page. noindex.</div>
 </body>
 </html>
 
